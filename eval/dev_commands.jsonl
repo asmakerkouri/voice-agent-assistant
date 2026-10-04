@@ -1,0 +1,30 @@
+{"text": "There is a crack on wall twelve, level two. It looks major.", "tool": "report_defect", "args": {"kind": "crack", "location": "wall 12, level 2", "severity": "major"}}
+{"text": "Log a small leak in room three.", "tool": "report_defect", "args": {"kind": "leak", "location": "room 3", "severity": "minor"}}
+{"text": "I found a hollow on column B four, it's critical.", "tool": "report_defect", "args": {"kind": "hollow", "location": "column B4", "severity": "critical"}}
+{"text": "Record a bump on the ceiling of zone seven.", "tool": "report_defect", "args": {"kind": "bump", "location": "zone 7", "severity": "minor"}}
+{"text": "Please report corrosion on beam fourteen, serious.", "tool": "report_defect", "args": {"kind": "corrosion", "location": "beam 14", "severity": "major"}}
+{"text": "New defect: a large stain on wall five.", "tool": "report_defect", "args": {"kind": "stain", "location": "wall 5", "severity": "major"}}
+{"text": "Urgent, there is spalling on slab two at level one.", "tool": "report_defect", "args": {"kind": "spalling", "location": "slab 2, level 1", "severity": "critical"}}
+{"text": "Add a minor crack in corridor four.", "tool": "report_defect", "args": {"kind": "crack", "location": "corridor 4", "severity": "minor"}}
+{"text": "What defects have we logged so far?", "tool": "list_defects", "args": {}}
+{"text": "Read me the list of issues.", "tool": "list_defects", "args": {}}
+{"text": "How many defects did I report today?", "tool": "list_defects", "args": {}}
+{"text": "Can you repeat the problems we found?", "tool": "list_defects", "args": {}}
+{"text": "Set a timer for five minutes.", "tool": "set_timer", "args": {"seconds": 300}}
+{"text": "Start a countdown of thirty seconds.", "tool": "set_timer", "args": {"seconds": 30}}
+{"text": "Remind me in twenty minutes.", "tool": "set_timer", "args": {"seconds": 1200}}
+{"text": "Timer, two minutes please.", "tool": "set_timer", "args": {"seconds": 120}}
+{"text": "Put a timer on for one hour.", "tool": "set_timer", "args": {"seconds": 3600}}
+{"text": "What time is it?", "tool": "get_time", "args": {}}
+{"text": "Tell me the time please.", "tool": "get_time", "args": {}}
+{"text": "Can you give me the current time?", "tool": "get_time", "args": {}}
+{"text": "What is twelve times seven?", "tool": "calculate", "args": {"value": 84}}
+{"text": "How much is two hundred divided by eight?", "tool": "calculate", "args": {"value": 25}}
+{"text": "Calculate fifteen plus twenty seven.", "tool": "calculate", "args": {"value": 42}}
+{"text": "What's ninety minus thirty five?", "tool": "calculate", "args": {"value": 55}}
+{"text": "Compute three point five times four.", "tool": "calculate", "args": {"value": 14}}
+{"text": "What is the first step of the scanner calibration?", "tool": "checklist_step", "args": {"procedure": "scanner calibration", "step": 1}}
+{"text": "Read step three of the scanner calibration procedure.", "tool": "checklist_step", "args": {"procedure": "scanner calibration", "step": 3}}
+{"text": "How do I do the robot start-up?", "tool": "checklist_step", "args": {"procedure": "robot start-up", "step": 1}}
+{"text": "Robot start-up, step two.", "tool": "checklist_step", "args": {"procedure": "robot start-up", "step": 2}}
+{"text": "Give me step four of the robot checklist.", "tool": "checklist_step", "args": {"procedure": "robot start-up", "step": 4}}

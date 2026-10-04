@@ -1,0 +1,24 @@
+{"text": "We have a big crack on the stairs, level three.", "tool": "report_defect", "args": {"kind": "crack", "location": "level 3", "severity": "major"}}
+{"text": "Note a slight dent on column twenty one.", "tool": "report_defect", "args": {"kind": "dent", "location": "column 21", "severity": "minor"}}
+{"text": "Damp patch in room twelve, I think it is serious.", "tool": "report_defect", "args": {"kind": "damp", "location": "room 12", "severity": "major"}}
+{"text": "Report a hole in the slab of block C.", "tool": "report_defect", "args": {"kind": "hole", "location": "block C", "severity": "minor"}}
+{"text": "There is rust on beam nine, it is dangerous.", "tool": "report_defect", "args": {"kind": "corrosion", "location": "beam 9", "severity": "critical"}}
+{"text": "Log a leak near grid A three.", "tool": "report_defect", "args": {"kind": "leak", "location": "grid A3", "severity": "minor"}}
+{"text": "Which defects are on the list?", "tool": "list_defects", "args": {}}
+{"text": "Show me all the issues.", "tool": "list_defects", "args": {}}
+{"text": "What problems have been reported?", "tool": "list_defects", "args": {}}
+{"text": "Set a ten minute timer.", "tool": "set_timer", "args": {"seconds": 600}}
+{"text": "Countdown forty five seconds.", "tool": "set_timer", "args": {"seconds": 45}}
+{"text": "Can you remind me in three minutes?", "tool": "set_timer", "args": {"seconds": 180}}
+{"text": "Start a timer for one minute.", "tool": "set_timer", "args": {"seconds": 60}}
+{"text": "Do you know what time it is?", "tool": "get_time", "args": {}}
+{"text": "What's the time?", "tool": "get_time", "args": {}}
+{"text": "What is sixty four divided by four?", "tool": "calculate", "args": {"value": 16}}
+{"text": "How much is nineteen times three?", "tool": "calculate", "args": {"value": 57}}
+{"text": "Add one hundred and fifty plus seventy five.", "tool": "calculate", "args": {"value": 225}}
+{"text": "Eight times two point five equals what?", "tool": "calculate", "args": {"value": 20}}
+{"text": "What is the second step of the scanner calibration?", "tool": "checklist_step", "args": {"procedure": "scanner calibration", "step": 2}}
+{"text": "Scanner calibration, step four please.", "tool": "checklist_step", "args": {"procedure": "scanner calibration", "step": 4}}
+{"text": "Next step for the robot start-up.", "tool": "checklist_step", "args": {"procedure": "robot start-up", "step": 1}}
+{"text": "Walk me through the robot start-up procedure.", "tool": "checklist_step", "args": {"procedure": "robot start-up", "step": 1}}
+{"text": "Read the third step of the robot checklist.", "tool": "checklist_step", "args": {"procedure": "robot start-up", "step": 3}}

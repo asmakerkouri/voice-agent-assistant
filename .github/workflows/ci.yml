@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements-dev.txt
+      - run: ruff check .
+      - uses: actions/cache@v4
+        with:
+          path: models
+          key: models-${{ hashFiles('scripts/download_models.sh') }}
+      - name: Download open models (Whisper tiny.en, Piper voices, Silero VAD)
+        run: ./scripts/download_models.sh
+      - name: Tests (text, brain, tools, full voice turn, VAD)
+        run: pytest -q
+      - name: Demo turn
+        run: PYTHONPATH=src python -m voiceagent.cli --say "Set a timer for five minutes." --out output/answer.wav
+      - uses: actions/upload-artifact@v4
+        with:
+          name: demo-audio
+          path: output/
+
+  docker:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build and smoke test
+        run: |
+          docker build -t voice-agent:ci .
+          docker run -d -p 8000:8000 --name api voice-agent:ci
+          for i in $(seq 1 60); do curl -fs localhost:8000/health && break; sleep 2; done
+          curl -fs -X POST localhost:8000/text -H 'Content-Type: application/json' \
+               -d '{"text": "Set a timer for five minutes"}' | grep -q set_timer

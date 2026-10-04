@@ -1,0 +1,627 @@
+{
+  "text_only": {
+    "dev": {
+      "correct": 30,
+      "n": 30
+    },
+    "test": {
+      "correct": 20,
+      "n": 24
+    }
+  },
+  "speech": {
+    "dev|clean": {
+      "edits": 47.0,
+      "words": 612.0,
+      "correct": 79.0,
+      "n": 90.0,
+      "stt_ms": 21770.754100999053,
+      "audio_s": 191.42900000000012,
+      "wer": 0.0768,
+      "intent_accuracy": 0.8778,
+      "stt_rtf": 0.114
+    },
+    "dev|20 dB": {
+      "edits": 58.0,
+      "words": 612.0,
+      "correct": 74.0,
+      "n": 90.0,
+      "stt_ms": 21491.8394220008,
+      "audio_s": 191.42900000000012,
+      "wer": 0.0948,
+      "intent_accuracy": 0.8222,
+      "stt_rtf": 0.112
+    },
+    "dev|10 dB": {
+      "edits": 75.0,
+      "words": 612.0,
+      "correct": 74.0,
+      "n": 90.0,
+      "stt_ms": 21741.687551999585,
+      "audio_s": 191.42900000000012,
+      "wer": 0.1225,
+      "intent_accuracy": 0.8222,
+      "stt_rtf": 0.114
+    },
+    "dev|5 dB": {
+      "edits": 113.0,
+      "words": 612.0,
+      "correct": 64.0,
+      "n": 90.0,
+      "stt_ms": 21851.80744600188,
+      "audio_s": 191.42900000000012,
+      "wer": 0.1846,
+      "intent_accuracy": 0.7111,
+      "stt_rtf": 0.114
+    },
+    "test|clean": {
+      "edits": 38.0,
+      "words": 474.0,
+      "correct": 50.0,
+      "n": 72.0,
+      "stt_ms": 16912.658571999826,
+      "audio_s": 148.15874999999994,
+      "wer": 0.0802,
+      "intent_accuracy": 0.6944,
+      "stt_rtf": 0.114
+    },
+    "test|20 dB": {
+      "edits": 39.0,
+      "words": 474.0,
+      "correct": 49.0,
+      "n": 72.0,
+      "stt_ms": 16454.32916800041,
+      "audio_s": 148.15874999999994,
+      "wer": 0.0823,
+      "intent_accuracy": 0.6806,
+      "stt_rtf": 0.111
+    },
+    "test|10 dB": {
+      "edits": 58.0,
+      "words": 474.0,
+      "correct": 47.0,
+      "n": 72.0,
+      "stt_ms": 16521.091513999636,
+      "audio_s": 148.15874999999994,
+      "wer": 0.1224,
+      "intent_accuracy": 0.6528,
+      "stt_rtf": 0.112
+    },
+    "test|5 dB": {
+      "edits": 85.0,
+      "words": 474.0,
+      "correct": 40.0,
+      "n": 72.0,
+      "stt_ms": 16834.490066999933,
+      "audio_s": 148.15874999999994,
+      "wer": 0.1793,
+      "intent_accuracy": 0.5556,
+      "stt_rtf": 0.114
+    }
+  },
+  "voices": {
+    "en_US-ryan-low": "US male",
+    "en_GB-alan-low": "UK male",
+    "en_US-lessac-low": "US female"
+  },
+  "errors_clean_or_20db": [
+    {
+      "split": "dev",
+      "voice": "en_US-ryan-low",
+      "snr": null,
+      "text": "I found a hollow on column B four, it's critical.",
+      "heard": "I found a hollow on column before it's critical."
+    },
+    {
+      "split": "dev",
+      "voice": "en_US-ryan-low",
+      "snr": 20,
+      "text": "I found a hollow on column B four, it's critical.",
+      "heard": "I found a hollow on column before it's critical."
+    },
+    {
+      "split": "dev",
+      "voice": "en_US-ryan-low",
+      "snr": 20,
+      "text": "Please report corrosion on beam fourteen, serious.",
+      "heard": "Please report corrosion on beam 14, Sirius."
+    },
+    {
+      "split": "dev",
+      "voice": "en_US-ryan-low",
+      "snr": 20,
+      "text": "Urgent, there is spalling on slab two at level one.",
+      "heard": "Urgent there is falling on slab 2 at level 1."
+    },
+    {
+      "split": "dev",
+      "voice": "en_US-ryan-low",
+      "snr": null,
+      "text": "Timer, two minutes please.",
+      "heard": "Tiner, two minutes please."
+    },
+    {
+      "split": "dev",
+      "voice": "en_US-ryan-low",
+      "snr": 20,
+      "text": "Timer, two minutes please.",
+      "heard": "Tiner, two minutes please."
+    },
+    {
+      "split": "dev",
+      "voice": "en_US-ryan-low",
+      "snr": 20,
+      "text": "Put a timer on for one hour.",
+      "heard": "put a tiner on for one hour"
+    },
+    {
+      "split": "test",
+      "voice": "en_US-ryan-low",
+      "snr": null,
+      "text": "There is rust on beam nine, it is dangerous.",
+      "heard": "There is rust on B9, it is dangerous."
+    },
+    {
+      "split": "test",
+      "voice": "en_US-ryan-low",
+      "snr": 20,
+      "text": "There is rust on beam nine, it is dangerous.",
+      "heard": "There is rust on B9, it is dangerous."
+    },
+    {
+      "split": "test",
+      "voice": "en_US-ryan-low",
+      "snr": null,
+      "text": "Log a leak near grid A three.",
+      "heard": "Log Elite near grid of 3"
+    },
+    {
+      "split": "test",
+      "voice": "en_US-ryan-low",
+      "snr": 20,
+      "text": "Log a leak near grid A three.",
+      "heard": "Log a leak near grid of three."
+    },
+    {
+      "split": "test",
+      "voice": "en_US-ryan-low",
+      "snr": null,
+      "text": "Which defects are on the list?",
+      "heard": "which defects are on the list"
+    },
+    {
+      "split": "test",
+      "voice": "en_US-ryan-low",
+      "snr": 20,
+      "text": "Which defects are on the list?",
+      "heard": "which defects are on the list"
+    },
+    {
+      "split": "test",
+      "voice": "en_US-ryan-low",
+      "snr": null,
+      "text": "Set a ten minute timer.",
+      "heard": "Set a 10-minute timer."
+    },
+    {
+      "split": "test",
+      "voice": "en_US-ryan-low",
+      "snr": 20,
+      "text": "Set a ten minute timer.",
+      "heard": "set a 10-minute timer."
+    },
+    {
+      "split": "test",
+      "voice": "en_US-ryan-low",
+      "snr": null,
+      "text": "What's the time?",
+      "heard": "What's their"
+    },
+    {
+      "split": "test",
+      "voice": "en_US-ryan-low",
+      "snr": 20,
+      "text": "What's the time?",
+      "heard": "What's that"
+    },
+    {
+      "split": "test",
+      "voice": "en_US-ryan-low",
+      "snr": null,
+      "text": "What is the second step of the scanner calibration?",
+      "heard": "What is the second step of the scanner calibration?"
+    },
+    {
+      "split": "test",
+      "voice": "en_US-ryan-low",
+      "snr": 20,
+      "text": "What is the second step of the scanner calibration?",
+      "heard": "What is the second step of the scanner calibration?"
+    },
+    {
+      "split": "test",
+      "voice": "en_US-ryan-low",
+      "snr": null,
+      "text": "Scanner calibration, step four please.",
+      "heard": "Scan our calibration step 4 please."
+    },
+    {
+      "split": "test",
+      "voice": "en_US-ryan-low",
+      "snr": 20,
+      "text": "Scanner calibration, step four please.",
+      "heard": "Scan our calibration, step 4 please."
+    },
+    {
+      "split": "test",
+      "voice": "en_US-ryan-low",
+      "snr": null,
+      "text": "Read the third step of the robot checklist.",
+      "heard": "read the third step of the robot checklist"
+    },
+    {
+      "split": "test",
+      "voice": "en_US-ryan-low",
+      "snr": 20,
+      "text": "Read the third step of the robot checklist.",
+      "heard": "Read the third step of the robot checklist."
+    },
+    {
+      "split": "dev",
+      "voice": "en_GB-alan-low",
+      "snr": 20,
+      "text": "Please report corrosion on beam fourteen, serious.",
+      "heard": "Please report corrosion on beam 14, Sirius."
+    },
+    {
+      "split": "dev",
+      "voice": "en_GB-alan-low",
+      "snr": null,
+      "text": "Urgent, there is spalling on slab two at level one.",
+      "heard": "urgent, there is spoiling on slab 2 at level 1."
+    },
+    {
+      "split": "dev",
+      "voice": "en_GB-alan-low",
+      "snr": 20,
+      "text": "Urgent, there is spalling on slab two at level one.",
+      "heard": "urgent, very sprawling on slab 2 at level 1."
+    },
+    {
+      "split": "dev",
+      "voice": "en_GB-alan-low",
+      "snr": null,
+      "text": "Start a countdown of thirty seconds.",
+      "heard": "start account down of 30 seconds."
+    },
+    {
+      "split": "dev",
+      "voice": "en_GB-alan-low",
+      "snr": 20,
+      "text": "Start a countdown of thirty seconds.",
+      "heard": "start account down of 30 seconds."
+    },
+    {
+      "split": "dev",
+      "voice": "en_GB-alan-low",
+      "snr": null,
+      "text": "Timer, two minutes please.",
+      "heard": "Siner, 2 minutes please."
+    },
+    {
+      "split": "dev",
+      "voice": "en_GB-alan-low",
+      "snr": 20,
+      "text": "Timer, two minutes please.",
+      "heard": "sign up 2 minutes please."
+    },
+    {
+      "split": "dev",
+      "voice": "en_GB-alan-low",
+      "snr": null,
+      "text": "What's ninety minus thirty five?",
+      "heard": "What's 92 minus 35?"
+    },
+    {
+      "split": "test",
+      "voice": "en_GB-alan-low",
+      "snr": null,
+      "text": "Log a leak near grid A three.",
+      "heard": "Log a leak near grader 3."
+    },
+    {
+      "split": "test",
+      "voice": "en_GB-alan-low",
+      "snr": 20,
+      "text": "Log a leak near grid A three.",
+      "heard": "Log a leak near grida 3."
+    },
+    {
+      "split": "test",
+      "voice": "en_GB-alan-low",
+      "snr": null,
+      "text": "Which defects are on the list?",
+      "heard": "which defects are on the list."
+    },
+    {
+      "split": "test",
+      "voice": "en_GB-alan-low",
+      "snr": 20,
+      "text": "Which defects are on the list?",
+      "heard": "which defects are on the list."
+    },
+    {
+      "split": "test",
+      "voice": "en_GB-alan-low",
+      "snr": null,
+      "text": "What's the time?",
+      "heard": "What's the time?"
+    },
+    {
+      "split": "test",
+      "voice": "en_GB-alan-low",
+      "snr": 20,
+      "text": "What's the time?",
+      "heard": "what's the time?"
+    },
+    {
+      "split": "test",
+      "voice": "en_GB-alan-low",
+      "snr": null,
+      "text": "What is the second step of the scanner calibration?",
+      "heard": "What is the second step of the scanner calibration?"
+    },
+    {
+      "split": "test",
+      "voice": "en_GB-alan-low",
+      "snr": 20,
+      "text": "What is the second step of the scanner calibration?",
+      "heard": "What is the second step of the scanner calibration?"
+    },
+    {
+      "split": "test",
+      "voice": "en_GB-alan-low",
+      "snr": null,
+      "text": "Scanner calibration, step four please.",
+      "heard": "It's going to calibration step 4 please."
+    },
+    {
+      "split": "test",
+      "voice": "en_GB-alan-low",
+      "snr": 20,
+      "text": "Scanner calibration, step four please.",
+      "heard": "It's going to calibration step 4 please."
+    },
+    {
+      "split": "test",
+      "voice": "en_GB-alan-low",
+      "snr": null,
+      "text": "Read the third step of the robot checklist.",
+      "heard": "Read the third step of the robot checklist."
+    },
+    {
+      "split": "test",
+      "voice": "en_GB-alan-low",
+      "snr": 20,
+      "text": "Read the third step of the robot checklist.",
+      "heard": "Read the third step of the robot checklist."
+    },
+    {
+      "split": "dev",
+      "voice": "en_US-lessac-low",
+      "snr": 20,
+      "text": "Please report corrosion on beam fourteen, serious.",
+      "heard": "Please report corrosion on beam 14, Sirius."
+    },
+    {
+      "split": "dev",
+      "voice": "en_US-lessac-low",
+      "snr": null,
+      "text": "Urgent, there is spalling on slab two at level one.",
+      "heard": "Urgent they're responding on slab 2 at level 1."
+    },
+    {
+      "split": "dev",
+      "voice": "en_US-lessac-low",
+      "snr": 20,
+      "text": "Urgent, there is spalling on slab two at level one.",
+      "heard": "Virgint, they're responding on slab 2 at level 1."
+    },
+    {
+      "split": "dev",
+      "voice": "en_US-lessac-low",
+      "snr": null,
+      "text": "How many defects did I report today?",
+      "heard": "How may you defect? Stay in report today."
+    },
+    {
+      "split": "dev",
+      "voice": "en_US-lessac-low",
+      "snr": 20,
+      "text": "How many defects did I report today?",
+      "heard": "How may you defect, stay in report today?"
+    },
+    {
+      "split": "dev",
+      "voice": "en_US-lessac-low",
+      "snr": null,
+      "text": "Remind me in twenty minutes.",
+      "heard": "Renined me in 20 minutes."
+    },
+    {
+      "split": "dev",
+      "voice": "en_US-lessac-low",
+      "snr": 20,
+      "text": "Remind me in twenty minutes.",
+      "heard": "Renined me in 20 minutes."
+    },
+    {
+      "split": "dev",
+      "voice": "en_US-lessac-low",
+      "snr": 20,
+      "text": "Timer, two minutes please.",
+      "heard": "Time for two minutes please."
+    },
+    {
+      "split": "dev",
+      "voice": "en_US-lessac-low",
+      "snr": null,
+      "text": "Calculate fifteen plus twenty seven.",
+      "heard": "calculate 15 past 27."
+    },
+    {
+      "split": "dev",
+      "voice": "en_US-lessac-low",
+      "snr": 20,
+      "text": "Calculate fifteen plus twenty seven.",
+      "heard": "calculate 15 past 27."
+    },
+    {
+      "split": "dev",
+      "voice": "en_US-lessac-low",
+      "snr": null,
+      "text": "How do I do the robot start-up?",
+      "heard": "How do I do the Growbot Start app"
+    },
+    {
+      "split": "dev",
+      "voice": "en_US-lessac-low",
+      "snr": 20,
+      "text": "How do I do the robot start-up?",
+      "heard": "How do I do the grow but start out"
+    },
+    {
+      "split": "test",
+      "voice": "en_US-lessac-low",
+      "snr": null,
+      "text": "Damp patch in room twelve, I think it is serious.",
+      "heard": "Dampatch in Room 12, I think it is serious."
+    },
+    {
+      "split": "test",
+      "voice": "en_US-lessac-low",
+      "snr": 20,
+      "text": "Damp patch in room twelve, I think it is serious.",
+      "heard": "Dad Patch in Room 12, I think it is serious."
+    },
+    {
+      "split": "test",
+      "voice": "en_US-lessac-low",
+      "snr": null,
+      "text": "Log a leak near grid A three.",
+      "heard": "Log a leak near grid of 3."
+    },
+    {
+      "split": "test",
+      "voice": "en_US-lessac-low",
+      "snr": 20,
+      "text": "Log a leak near grid A three.",
+      "heard": "Log a leak near greater three."
+    },
+    {
+      "split": "test",
+      "voice": "en_US-lessac-low",
+      "snr": null,
+      "text": "Which defects are on the list?",
+      "heard": "which defects are on the list."
+    },
+    {
+      "split": "test",
+      "voice": "en_US-lessac-low",
+      "snr": 20,
+      "text": "Which defects are on the list?",
+      "heard": "which defects are on the list."
+    },
+    {
+      "split": "test",
+      "voice": "en_US-lessac-low",
+      "snr": 20,
+      "text": "What problems have been reported?",
+      "heard": "Quite problems have been reported."
+    },
+    {
+      "split": "test",
+      "voice": "en_US-lessac-low",
+      "snr": null,
+      "text": "Countdown forty five seconds.",
+      "heard": "count down 45 seconds"
+    },
+    {
+      "split": "test",
+      "voice": "en_US-lessac-low",
+      "snr": 20,
+      "text": "Countdown forty five seconds.",
+      "heard": "count down 45 seconds."
+    },
+    {
+      "split": "test",
+      "voice": "en_US-lessac-low",
+      "snr": null,
+      "text": "What's the time?",
+      "heard": "What's the time?"
+    },
+    {
+      "split": "test",
+      "voice": "en_US-lessac-low",
+      "snr": 20,
+      "text": "What's the time?",
+      "heard": "What's the time?"
+    },
+    {
+      "split": "test",
+      "voice": "en_US-lessac-low",
+      "snr": null,
+      "text": "What is the second step of the scanner calibration?",
+      "heard": "What is the second step of the scanner or calibration?"
+    },
+    {
+      "split": "test",
+      "voice": "en_US-lessac-low",
+      "snr": 20,
+      "text": "What is the second step of the scanner calibration?",
+      "heard": "What is the second step of the scanner calibration?"
+    },
+    {
+      "split": "test",
+      "voice": "en_US-lessac-low",
+      "snr": null,
+      "text": "Scanner calibration, step four please.",
+      "heard": "scatter calibration, step 4 please"
+    },
+    {
+      "split": "test",
+      "voice": "en_US-lessac-low",
+      "snr": 20,
+      "text": "Scanner calibration, step four please.",
+      "heard": "Scatter calibration, step 4 please."
+    },
+    {
+      "split": "test",
+      "voice": "en_US-lessac-low",
+      "snr": null,
+      "text": "Read the third step of the robot checklist.",
+      "heard": "Read the third step of a robot checklist."
+    },
+    {
+      "split": "test",
+      "voice": "en_US-lessac-low",
+      "snr": 20,
+      "text": "Read the third step of the robot checklist.",
+      "heard": "Read the third step of the robot checklist."
+    }
+  ],
+  "librispeech_samples": {
+    "files": 3,
+    "words": 77,
+    "wer": 0.0519
+  },
+  "latency_ms": {
+    "stt_ms": 219.4,
+    "agent_ms": 0.2,
+    "tts_ms": 260.4,
+    "total_ms": 480.0,
+    "audio_in_s": 1.8,
+    "audio_out_s": 5.5,
+    "p95_total_ms": 817.5
+  }
+}
